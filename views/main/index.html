@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>登录/注册</title>
+
+<link rel="stylesheet" href="/public/css/style1.css">
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+</head>
+<body>
+
+<div class="cotn_principal">
+  <div class="cont_centrar">
+    <div class="cont_login">
+      <div class="cont_info_log_sign_up">
+        <div class="col_md_login">
+          <div class="cont_ba_opcitiy">
+            <h2>LOGIN</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <button class="btn_login" onClick="cambiar_login()">LOGIN</button>
+          </div>
+        </div>
+        <div class="col_md_sign_up">
+          <div class="cont_ba_opcitiy">
+            <h2>SIGN UP</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <button class="btn_sign_up" onClick="cambiar_sign_up()">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+      <div class="cont_back_info">
+        <div class="cont_img_back_grey"> <img src="/public/images/po.jpg" alt="" /> </div>
+      </div>
+      <div class="cont_forms" >
+        <div class="cont_img_back_"> <img src="/public/images/po.jpg" alt="" /> </div>
+        <div class="cont_form_login"> <a href="#" onClick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+          <h2>LOGIN</h2>
+          <input type="text" placeholder="Email" id="username"/>
+          <input type="password" placeholder="Password" id="password" />
+          <button class="btn_login" id="login_btn">LOGIN</button>
+          <div id="login_waring" ></div>
+        </div>
+        <div class="cont_form_sign_up"> <a href="#" onClick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+          <h2>SIGN UP</h2>
+          <input type="text" placeholder="User" id="reg_username" />
+          <input type="password" placeholder="Password" id="reg_password"/>
+          <input type="password" placeholder="Confirm Password" id="re_password" />
+          <button class="btn_sign_up" id="register_btn">SIGN UP</button>
+          <div id="sign_waring" ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/public/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="/public/js/index.js"></script>
+</body>
+</html>
+
